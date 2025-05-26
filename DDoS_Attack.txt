@@ -1,0 +1,14 @@
+```mermaid
+sequenceDiagram
+	participant Attacker
+	participant BotNet
+	participant Webserver
+	participant Firewall
+
+Attacker->>BotNet: Selects the target, the type of traffic, and the time and inputs the information into the BotNet.(Ip address and or Web address included as well)
+BotNet->>Webserver: Sends traffic to Webserver with the specified attack information from attacker and attempts overloads the Webserver.
+Webserver->>Firewall: The webserver receives these Packets from the BotNet and sends them to the Firewall to ensure they meet the set parameters.(Firewall is the networks defense it will analyze the incoming Ip addresses and determine which ones to block)
+
+
+
+```
